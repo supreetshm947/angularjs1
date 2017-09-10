@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<title>Angular Demo</title>
+	<script type="text/javascript" src="..\lib\angular\angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller='myController'>
+		<h1>Hi {{author.name}}</h1>
+		<p>{{author.title}}, {{author.company}}</p>
+	</div>
+</body>
+<script type="text/javascript">
+	function myController($scope){
+		$scope.author = {
+			'name' : 'john',
+			'title' : 'title',
+			'company' : 'abc'
+		}
+	}
+</script>
+</html>
